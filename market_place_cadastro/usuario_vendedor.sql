@@ -1,3 +1,7 @@
+CREATE DATABASE market_place;
+
+USE market_place;
+
 CREATE TABLE usuarios (
     id INT AUTO_INCREMENT PRIMARY KEY,
     nome VARCHAR(255) NOT NULL,
@@ -26,3 +30,11 @@ CREATE TABLE vendedores (
     informacoes_fiscais VARCHAR(255) NOT NULL,
     informacoes_bancarias VARCHAR(255) NOT NULL
 );
+
+CREATE USER 'novo_usuario'@'localhost' IDENTIFIED BY 'nova_senha';
+
+GRANT ALL PRIVILEGES ON market_place.* TO 'novo_usuario'@'localhost';
+
+FLUSH PRIVILEGES;
+
+SHOW GRANTS FOR 'novo_usuario'@'localhost';
