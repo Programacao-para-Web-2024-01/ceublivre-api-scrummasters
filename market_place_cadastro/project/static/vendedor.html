@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro de Vendedor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form-container">
+        <h2>Cadastro de Vendedor</h2>
+        <form id="vendedorForm">
+            <fieldset>
+                <legend>Dados do Vendedor</legend>
+                <label for="vendedor_name">Nome Completo</label>
+                <input type="text" id="vendedor_name" name="nome" required>
+                <label for="vendedor_email">E-mail</label>
+                <input type="email" id="vendedor_email" name="email" required>
+                <label for="vendedor_password">Senha</label>
+                <input type="password" id="vendedor_password" name="senha" required>
+                <label for="vendedor_confirm_password">Confirme a Senha</label>
+                <input type="password" id="vendedor_confirm_password" name="confirmar_senha" required>
+                <label for="vendedor_banco">Banco</label>
+                <input type="text" id="vendedor_banco" name="banco" required>
+                <label for="vendedor_agencia">Agência</label>
+                <input type="text" id="vendedor_agencia" name="agencia" required>
+                <label for="vendedor_conta">Conta</label>
+                <input type="text" id="vendedor_conta" name="conta" required>
+            </fieldset>
+            <button type="submit">Cadastrar Vendedor</button>
+        </form>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
